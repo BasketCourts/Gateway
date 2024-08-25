@@ -24,7 +24,7 @@ spring:
         - id: visit
           uri: ${VISIT_URI}
           predicates:
-            - Path=/visit, /visit/{segment}, /visit/{segment}/{segment}
+            - Path=/visit, /visit/{segment}, /visit/{segment}/{segment2}
           filters:
             - TokenRelay=
             - RemoveRequestHeader=Cookie
